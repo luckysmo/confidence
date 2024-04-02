@@ -35,7 +35,7 @@ public class ProductController {
         return productService.getById(productId);
     }
 
-    @GetMapping("/{productId}")
+    @GetMapping("/productCategory")
     public List<ProductDto> getProductsByCategory(@RequestBody ProductDto productDto) {
         return productService.getProductsByCategory(productDto);
     }

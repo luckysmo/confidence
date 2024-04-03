@@ -13,7 +13,7 @@ public class BasketController {
     private final BasketService basketService;
 
     @PatchMapping("/update")
-    public BasketDto update(@RequestBody BasketDto basketDto, Long productId,Long userId) {
+    public BasketDto update(@RequestBody BasketDto basketDto, Long productId,Long userId) {//TODO test
         return basketService.updateBasket(basketDto,productId,userId);
     }
 
